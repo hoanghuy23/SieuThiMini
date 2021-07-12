@@ -1,0 +1,945 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="vi" xml:lang="vi">
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<link rel="canonical" href="http://ministop.vn/" />
+	<link rel="alternate" href="http://ministop.vn/" hreflang="vi" />
+	<link rel="alternate" href="http://ministop.vn/en/" hreflang="en" />
+	<link rel="alternate" href="http://ministop.vn/en/" hreflang="x-default" />
+
+	<title>MINISTOP nơi dừng chân bên đường</title>
+	<meta name='description' content='Trang web chính thức của cửa hàng tiện lợi MINISTOP. Rất nhiều thông tin dịch vụ sản phẩm, chương trình khuyến mãi như thẻ Coupon. Ngoài ra còn có dịch vụ kiểm tra, tìm kiếm cửa hàng và hệ thống ATM' />
+			<meta name='keywords' content='Cửa hàng tiên lợi MInistop, Thức ăn nhanh - Ministop, bánh kẹo Nhật bản - Ministop, MINISTOP Việt Nam, cửa hàng ministop, ministop' />
+			<meta name='author' content='MINISTOP' /><meta property='og:title' content='MINISTOP nơi dừng chân bên đường' />
+			<meta property='og:type' content='website' />
+			<meta property='og:description' content='Trang web chính thức của cửa hàng tiện lợi MINISTOP. Rất nhiều thông tin dịch vụ sản phẩm, chương trình khuyến mãi như thẻ Coupon. Ngoài ra còn có dịch vụ kiểm tra, tìm kiếm cửa hàng và hệ thống ATM' />
+			<meta property='og:image' content='https://www.ministop.vn/og.png' />
+			<meta property='og:site_name' content='MINISTOP Vietnam' />
+			<meta property='og:locale' content='vi_VN' />	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+<link rel="stylesheet" type="text/css" href="/frontend/common/css/jquery.bxslider.css" />
+<link rel="stylesheet" type="text/css" href="/frontend/common/css/import.css" />
+<script type="text/javascript" src="https://www.google.com/recaptcha/api.js"></script>
+			<link rel="stylesheet" type="text/css" href="/frontend/common/fancybox/jquery.fancybox-1.3.4.css" />
+	    	<script>
+		function loaddata()
+		{
+			var myArr;
+			var xmlhttp;
+			if (window.XMLHttpRequest)
+		{// code for IE7+, Firefox, Chrome, Opera, Safari
+			xmlhttp=new XMLHttpRequest();
+		}
+		else
+		{// code for IE6, IE5
+			xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+		}
+		xmlhttp.onreadystatechange=function()
+		{
+			if (xmlhttp.readyState == 4 && xmlhttp.status == 200)
+			{
+				localStorage.setItem("locations", xmlhttp.responseText);
+			}
+		}
+		xmlhttp.open("GET","/get-shop",true);
+		// xmlhttp.open("GET","https://www.ministop.vn/get-shop'",true);
+		xmlhttp.send();
+	}
+	if(!(window.location.href.indexOf("inquiry") > -1)) {
+		loaddata();
+	}
+</script>
+
+<!-- <script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+	ga('create', 'UA-67424428-1', 'auto');
+	ga('send', 'pageview');
+
+</script> -->
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-152894506-4"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-152894506-4');
+</script>
+</head>
+<body id="home">
+	<div id="wrapper">
+		<!--start header-->
+		<div id="fb-root"></div>
+		<script>(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s); js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));</script>
+		<div id="header">
+		<!-- <p class="bg_tetL"><img src="/frontend/img/common/head_bg_tetL.png" alt="" /></p> -->
+			<div id="header_inner">
+				<div id="head_top" class="clearfix">
+					<div id="head_time"><i class="fa fa-clock-o"></i> Giờ mở cửa:<span> Thứ 2 - Chủ nhật  24/7</span></div>
+					<div id="head_lang">
+						<p><a href="#" class="head_tongue"><i class="fa fa-globe"></i> English</a></p>
+						<ul class="dropdown hide">
+							<li><a href="/vietnamese">Tiếng Việt</a></li>
+							<li><a href="/english">English</a></li>
+						</ul>
+					</div>
+										<div id="head_privacy"><i class="fa fa-lock"></i> <a href="/privacy">Chính sách bảo mật</a></div>
+				</div>
+				<div id="head_bottom" class="clearfix">
+					<div id="head_search">
+						<form action="/search-result" method="POST">
+							<p class="input">
+								<input type="text" name="keyword" placeholder="Tìm kiếm"/>
+							</p>
+							<p id="head_icon_search"><img src="/frontend/img/common/head_icon_search.gif" alt="" /></p>
+						</form>
+					</div>
+
+				</div>
+				<div id="sp_head_bottom" class="clearfix">
+					<p id="sp_logo"><a href="/"><img src="/frontend/img/common/logo.jpg" width="100%" alt="MINISTOP" /></a></p>
+					<ul id="sp_navi" class="clearfix">
+												<li>
+							<a href="/corporate">
+								<img src="/frontend/img/common/sp_head_navi01.jpg" width="100%" alt="Thông tin công ty" />
+							</a>
+						</li>
+						<li>
+							<a href="/ms">
+								<img src="/frontend/img/common/sp_head_navi02.jpg" width="100%" alt="Danh sách cửa hàng" />
+							</a>
+						</li>
+												<li id="btn_menu"><img src="/frontend/img/common/btn_menu_out_01.jpg" width="100%" alt="" /></li>
+					</ul>
+					<ul class="side_navi">
+						<li><a href="/products">Thông tin sản phẩm</a>
+							<ul>
+								<li><a href="/new-product">Sản phẩm mới</a></li>
+								<li><a href="/best-seller">Sản phẩm bán chạy</a></li>
+								<li><a href="/all-product">Tất cả sản phẩm</a></li>
+							</ul>
+						</li>
+						<li><a href="/campaign">Khuyến mãi và sự kiện</a></li>
+						<li><a href="/service">Dịch vụ tại cửa hàng</a></li>
+						<li><a href="/ministopfan">MINISTOP FAN</a></li>
+						<li><a class="tuyendung" href="/recruit">Tuyển dụng</a></li>
+						<li><a href="/sitemap">Sơ đồ website</a></li>
+                        <li><a href="/inquiry">Liên hệ</a></li>
+                        <li><a href="http://ministop.vn/">Trang chủ</a></li>
+					</ul>
+				</div>
+			</div>
+		</div><!--end header-->
+		<!--/header-->
+		<div id="contents">
+			<div id="content_inner" class="clearfix">
+				<div id="main">
+					<div class="slider">
+
+	<div class="mimip-area">
+		<img class="mimip" src="/frontend/img/home/mimip_@1.png" alt="Mimip" />
+		<img class="balloon" src="/frontend/img/home/balloon.png" alt="balloon box" />
+	</div>
+	<div class="mimip-talk">
+		<ul>
+								<li class="speak">MINISTOP - Nhượng quyền thương hiệu ~ ♪</li>
+										<li>MINISTOP trên GRABMART - THỎA SỨC MUA SẮM 24/7 TẠI NHÀ ~ ♪</li>
+										<li>Cần là có với HỆ THỐNG MINISTOP ngàn món ngon ship thẳng tận bàn ~ ♪</li>
+										<li>XÚC XÍCH MINISTOP CHỈ CÒN 9000Đ ~ ♪</li>
+										<li>KEM SỮA CHUA DÂU - LÂU LÂU MỚI CÓ! ~ ♪</li>
+										<li>ĐẠI TIỆC ONIGIRI - TẤT CẢ ĐỒNG GIẢM 3K ~ ♪</li>
+										<li>BỘ ĐÔI BÁNH MÌ QUE MỚI TRÌNH LÀNG THÁNG 12 ~ ♪</li>
+										<li>Thực đơn lành mạnh với Salad gà karaage ngũ sắc ngon miệng, bắt mắt ~ ♪</li>
+										<li>Temaki Onigiri cá kho tiêu vị đậm đà, hương khó quên ~ ♪</li>
+										<li>Thực đơn giàu dưỡng chất với Sandwich Bò và Trứng thơm ngon ~ ♪</li>
+										<li>Làm mới thực đơn với Bánh mì mè Hàn Quốc độc đáo ~ ♪</li>
+										<li>Mì gà ngũ sắc dinh dưỡng đầy ấn tượng ~ ♪</li>
+										<li>Bữa sáng sành điệu với Sandwich xúc xích và trứng mayo ~ ♪</li>
+										<li>Thanh lọc, giảm cân với Salad sốt dầu giấm tươi ngon ~ ♪</li>
+										<li>Temaki onigiri bò sốt tiêu đen ~ ♪</li>
+										<li>Bữa ăn đầy dưỡng chất với cơm gà Karaage và trứng ~ ♪</li>
+										<li>Temaki Onigiri Gà sốt Thái ngon bá cháy ~ ♪</li>
+										<li>Tráng miệng tuyệt hảo với Bánh Mousse Socola và Mousse Cam ~ ♪</li>
+										<li>Mì khô xá xíu và mì gà xào rau củ đầy đủ dưỡng chất ~ ♪</li>
+										<li>Bữa trưa sành điệu với Burger gà sốt Katsu ~ ♪</li>
+										<li>No lâu chắc bụng với cơm chiên trứng thơm ngon ~ ♪</li>
+										<li>Bấn loạn với Temaki Sushi cá ngừ sốt mè rang ~ ♪</li>
+										<li>Thực đơn healthy với salad gà nướng & sốt tương ớt mayo ~ ♪</li>
+										<li>Sandwich gà nướng & phô mai béo ngậy dinh dưỡng ~ ♪</li>
+										<li>Thực đơn kiểu Hàn với cơm thịt heo xào & kim chi ~ ♪</li>
+										<li>Temaki Onigiri thịt heo sốt bulgogi cay ngon không thể cưỡng ~ ♪</li>
+										<li>Bữa sáng healthy với sandwich hỗn hợp cá ngừ rau củ ~ ♪</li>
+										<li>Bổ sung vitamin và chất xơ cho cơ thể với salas bắp cải trộn & thanh cua ~ ♪</li>
+										<li>Đứng hình với Sandwich ngũ cốc Gà xé sốt Mè rang mới lạ ~ ♪</li>
+										<li>Bấn loạn với Temaki Onigiri Xúc Xích Mayo mới lạ ~ ♪</li>
+										<li>Mì gà sốt phô mai cay cay mới lạ ~ ♪</li>
+										<li>Cơm gà sốt cà chua vị đậm đà, ngon như cơm nhà ~ ♪</li>
+										<li>Bổ sung vào menu ăn vặt món mực tẩm tiêu cay dai ngon giòn rụm ~ ♪</li>
+										<li>Mousse thanh long màu hấp dẫn vị ấn tượng ~ ♪</li>
+										<li>Sandwich gà nướng cay - hương hấp dẫn vị ngất ngây! ~ ♪</li>
+										<li>Onigiri thanh cua & trứng ngon nức lòng ~ ♪</li>
+										<li>Chìm đắm trong sự ngọt ngào và mềm mại của bánh Socola kem phô mai ~ ♪</li>
+										<li>Onigiri cá chình & trứng cá độc đáo ~ ♪</li>
+										<li>No căng chắc bụng với cơm bò xào đậu que Pháp ~ ♪</li>
+										<li>Bổ sung vào menu món Sandwich xúc xích & chà bông ~ ♪</li>
+										<li>Bấn loạn với bánh sầu riêng thơm lừng nức mũi ~ ♪</li>
+										<li>Bấn loạn với Temaki Onigiri thịt heo sốt nước tương vị ấn tượng ~ ♪</li>
+										<li>Temaki Sushi gà nướng vị mê li, ngon hết ý ~ ♪</li>
+										<li>No căng chắc bụng với Cơm chiên xúc xích & kim chi mới lạ ~ ♪</li>
+										<li>Temaki Sushi gà sốt phô mai beo béo đậm đà ~ ♪</li>
+										<li>Sandwich nướng trứng và phô mai thơm ngon khó cưỡng ~ ♪</li>
+										<li>Bổ sung vào menu Oden item Chả cá rong biển cuộn trứng ~ ♪</li>
+										<li>Onigiri trứng phô mai - ăn là mê ngay! ~ ♪</li>
+										<li>Cơm thịt nướng & BBQ vị đạm đà như cơm nhà ~ ♪</li>
+										<li>Mê mệt món tôm viên tẩm cốm mới lạ ~ ♪</li>
+										<li>Kem tươi đậu đỏ giúp "sáng tỏ" tình duyên ~ ♪</li>
+										<li>Làm nóng bao tử với bộ đôi Bánh bao bí đỏ đậu xanh & Bánh bao đậu đỏ nước cốt dừa ~ ♪</li>
+										<li>Bổ sung vào thực đơn sáng bộ đôi Sandwich mới dinh dưỡng ~ ♪</li>
+										<li>Cay cay nồng nồng với thịt heo xào sả ớt thơm ngon ~ ♪</li>
+										<li>Bộ đôi cơm nắm mới trình làng ~ ♪</li>
+										<li>Mê mệt với Temaki Onigiri Gà Nướng mới ~ ♪</li>
+										<li>Toàn bộ menu Cơm hộp & Mì hộp giảm 3000đ ~ ♪</li>
+										<li>Sandwich nướng xúc xích & cá ngừ phô mai MỚI ~ ♪</li>
+										<li>Đánh thức vị giác với Mì tôm thịt sốt phô mai ~ ♪</li>
+										<li>Ăn vặt quá đã với Gà không xương tẩm bột chiên ~ ♪</li>
+										<li>Ăn uống healthy với Salad cải tiến mới ~ ♪</li>
+										<li>Ngày mưa nhâm nhi chút đồ uống cùng Bò cuốn lá lốt mới lạ ~ ♪</li>
+										<li>Bánh Rollini Nhân Táo - tên độc đáo & vị mới lạ ~ ♪</li>
+										<li>NGÀY MÁT LẠNH VỚI KEM TƯƠI SỮA CHUA CAM ~ ♪</li>
+										<li>Thử ngay món Mì Tương Đen mang âm hưởng Hàn Quốc ~ ♪</li>
+										<li>Say mê vị Trà sữa trà đen độc đáo ~ ♪</li>
+										<li>Trà sữa than tre độc đáo ấn tượng ~ ♪</li>
+										<li>Xôi gà nấm đông cô dẻo thơm nóng nổi ~ ♪</li>
+										<li>BURGER BÓNG ĐÊM - NHÌN LÀ MUỐN NẾM! ~ ♪</li>
+										<li>HỘI THẢO NHƯỢNG QUYỀN MINISTOP ~ ♪</li>
+										<li>SINH NHẬT MINISTOP LẦN THỨ 9: MUA LÀ CÓ QUÀ! ~ ♪</li>
+										<li>ĐẠI TIỆC KARIMAN GIẢM 3000Đ ~ ♪</li>
+										<li>TẶNG NGAY MIRINDA ĐÁ ME KHI MUA CƠM HỘP BẤT KỲ ~ ♪</li>
+										<li>GIẢM ĐẾN 5000Đ CÀ PHÊ BẤT KỲ ~ ♪</li>
+										<li>BÁNH GIÒ NHÂN GÀ - PHIÊN BẢN MỚI LẠ! ~ ♪</li>
+										<li>BỘ ĐÔI BÁNH MÌ KẸP DINH DƯỠNG TRÌNH LÀNG ~ ♪</li>
+										<li>SET MINI SUSHI XINH XẮN ĐẦY THU HÚT ~ ♪</li>
+										<li>GIẢM 3000Đ COMBO ODEN NÓNG HỔI - VỪA THỔI VỪA ĂN! ~ ♪</li>
+										<li>TOÀN BỘ MENU MÌ HỘP GIẢM 3000Đ - THỎA SỨC CHỌN LỰA! ~ ♪</li>
+										<li>URAMAKI SUSHI ĐÃ TRỞ LẠI VÀ LỢI HẠI HƠN XƯA ~ ♪</li>
+										<li>MINISTOP NHẬN ĐẶT BÁNH KEM GIÁNG SINH ~ ♪</li>
+										<li>MỰC TẨM TIÊU CAY GIẢM CÒN 15K ~ ♪</li>
+										<li>GIẢM 10K KHI MUA SUSHI BẤT KỲ CÙNG OLONG VỊ CHANH ~ ♪</li>
+										<li>BÁNH BÔNG LAN PHÔ MAI THƠM LỪNG BÉO NGẬY ~ ♪</li>
+										<li>CALIFORNIA SUSHI NHỎ NHẮN XINH XẮN ~ ♪</li>
+							</ul>
+	</div>
+</div>
+<div id="side_smile_watch_mobi">
+	<a href="https://watch.ministop-campaign.vn">
+		<iframe width="100%" height="260" src="https://watch.ministop-campaign.vn/index.php?c=mini" frameborder="0"></iframe>
+	</a></div>
+		<ul class="col-md-3 clearfix">
+		<li class="box heightLine-group1"> <a class="box--image" href="/ms"><img src="/frontend/img/home/box-bg.jpg" alt="image" /></a>
+			<div class="box--item">
+				<div class="box---title"><a href="/ms">Danh sách cửa hàng</a></div>
+				<div class="box---text">Tìm kiếm địa chỉ các cửa hàng MINISTOP ở Việt Nam</div>
+			</div>
+		</li>
+		<li class="box heightLine-group1"> <a href="/corporate" class="box--image"><img src="/frontend/img/home/box-bg02.jpg" alt="cover" /></a>
+			<div class="box--item">
+				<div class="box---title"><a href="/corporate">Thông tin công ty</a></div>
+				<div class="box---text">Xem thông tin chi tiết về công ty MINISTOP tại đây</div>
+			</div>
+		</li>
+		<li class="box heightLine-group1"> <a href="/ministopfan" class="box--image"><img src="/frontend/img/home/box-bg03.jpg" alt="cover" /></a>
+			<div class="box--item">
+				<div class="box---title"><a href="/ministopfan">MINISTOP FAN</a></div>
+				<div class="box---text">Trở thành fan hâm mộ của Mimippu dễ thương</div>
+			</div>
+		</li>
+
+		<!-- show this -->
+						<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1205" class="box--image"><img src="/img/campaign/5e0eff8412b9d_fd2d7b509323d75f1e4d7f089f6e8f47.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1205">MINISTOP - Nhượng quyền thương hiệu</a></div>
+						<div class="box---text">"MINISTOP cùng bạn hướng đến sự thành công với nhữ...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1348" class="box--image"><img src="/img/campaign/5f51ff7a88364_0289f0abb2e0d4c44de4fbae7b83bd57.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1348">MINISTOP trên GRABMART - THỎA SỨC MUA SẮM 24/7 TẠI NHÀ</a></div>
+						<div class="box---text">Từ nay, bạn có thể ngồi ở nhà vi vu mua sắm sản ph...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1298" class="box--image"><img src="/img/campaign/5ece0a33bcd01_64622ee98403c6412b98404080674054.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1298">Cần là có với HỆ THỐNG MINISTOP ngàn món ngon ship thẳng tận bàn</a></div>
+						<div class="box---text">Trời nắng nóng, kẹt xe mà cơn đói lại hoành hành, ...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1410" class="box--image"><img src="/img/campaign/5fd0a393b72f3_c0f34b375e885ad21a881d8501fa181e.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1410">XÚC XÍCH MINISTOP CHỈ CÒN 9000Đ</a></div>
+						<div class="box---text">------------------- * Theo quy định của Bộ Công Th...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1409" class="box--image"><img src="/img/campaign/5fc8a51d5e009_f293118b90e8d5280fc095098d30e060.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1409">KEM SỮA CHUA DÂU - LÂU LÂU MỚI CÓ!</a></div>
+						<div class="box---text">Vị kem bất hủ mà các chị em mê tít mắt đã quay trở...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1411" class="box--image"><img src="/img/campaign/5fd0a603ca3cd_6a7aa2b374cc95284ef60146eaa8ea9b.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1411">ĐẠI TIỆC ONIGIRI - TẤT CẢ ĐỒNG GIẢM 3K</a></div>
+						<div class="box---text">Những nắm cơm mềm dẻo, thơm ngon bao bọc lấy nhân ...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1412" class="box--image"><img src="/img/campaign/5fd0a6dac7925_6bb598408467e5627c2d7dc4f9b0c6e3.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1412">BỘ ĐÔI BÁNH MÌ QUE MỚI TRÌNH LÀNG THÁNG 12</a></div>
+						<div class="box---text">Những chiếc bánh mì  thon dài giòn rụm luôn rất đư...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1141" class="box--image"><img src="/img/campaign/5d9fe61a2a2d6_bbb0e7977122904b9b3367559da5784d.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1141">Thực đơn lành mạnh với Salad gà karaage ngũ sắc ngon miệng, bắt mắt</a></div>
+						<div class="box---text">Giảm cân không còn khắc nghiệt với món Salad gà ka...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1188" class="box--image"><img src="/img/campaign/5df3134824420_92547fe0ee638794f2eeb31410285314.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1188">Temaki Onigiri cá kho tiêu vị đậm đà, hương khó quên</a></div>
+						<div class="box---text">Nắm cơm mềm dẻo, nhân cá kho tiêu đậm đà hợp khẩu ...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1189" class="box--image"><img src="/img/campaign/5df3166dc7c37_122c912f852ffecfce73226880afd829.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1189">Thực đơn giàu dưỡng chất với Sandwich Bò và Trứng thơm ngon</a></div>
+						<div class="box---text">Bữa sáng hiện đại với một miếng Sandwich đầy đủ di...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1200" class="box--image"><img src="/img/campaign/5e0eac07804ee_14198322dda2b9ea5a1c6579b42462e3.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1200">Làm mới thực đơn với Bánh mì mè Hàn Quốc độc đáo</a></div>
+						<div class="box---text">Món ăn vặt thơm ngon, làm từ bột nếp với lớp vỏ và...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1204" class="box--image"><img src="/img/campaign/5e0eb43942edb_d657c28b3984158bbffd9a0b834b5a3c.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1204">Mì gà ngũ sắc dinh dưỡng đầy ấn tượng</a></div>
+						<div class="box---text">Sợi mì dai ngon, sốt đậm đà chuẩn vị hòa quyện với...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1207" class="box--image"><img src="/img/campaign/5e182963c6836_2d541be908a713b297432625696aa1cb.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1207">Bữa sáng sành điệu với Sandwich xúc xích và trứng mayo</a></div>
+						<div class="box---text">Sandwich - món "bánh mì" du nhập từ phương Tây dần...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1208" class="box--image"><img src="/img/campaign/5e182befa5acb_42a8b71944e013be57119420fc18e6ca.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1208">Thanh lọc, giảm cân với Salad sốt dầu giấm tươi ngon</a></div>
+						<div class="box---text">Tết đến nơi rồi! Muốn giảm cân thì đừng bỏ qua món...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1214" class="box--image"><img src="/img/campaign/5e21613087809_79f35cae8b1ca503481ae07162738a41.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1214">Temaki onigiri bò sốt tiêu đen</a></div>
+						<div class="box---text">Vẫn là nắm cơm nức tiếng quen thuộc của MINISTOP n...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1215" class="box--image"><img src="/img/campaign/5e216164aee44_de7d89b9c6b3eac727bd6f5d8c601470.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1215">Bữa ăn đầy dưỡng chất với cơm gà Karaage và trứng</a></div>
+						<div class="box---text">Menu cơm hộp của MINISTOP gia nhập thêm món gà kar...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1224" class="box--image"><img src="/img/campaign/5e3d43071f76e_1e2e4bd267f1cbf77527ca4e23de2fa7.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1224">Temaki Onigiri Gà sốt Thái ngon bá cháy</a></div>
+						<div class="box---text">No căng, chắc bụng với món cơm nắm vị Gà sốt Thái ...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1225" class="box--image"><img src="/img/campaign/5e3d4470bcc92_a53a869938c589b9dca0d13d4c7c2f68.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1225">Tráng miệng tuyệt hảo với Bánh Mousse Socola và Mousse Cam</a></div>
+						<div class="box---text">Cặp đôi bánh Mousse vị Socola và vị Cam khiến ngườ...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1226" class="box--image"><img src="/img/campaign/5e464bea8fab4_a0e4077e03fe60c710dd4806e86b46f1.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1226">Mì khô xá xíu và mì gà xào rau củ đầy đủ dưỡng chất</a></div>
+						<div class="box---text">Sợi mì dai ngon đầy mê hoặc, phần sốt và thịt được...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1227" class="box--image"><img src="/img/campaign/5e464d3c96e39_a18e393ff5d29fde90ef65e5b70fd571.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1227">Bữa trưa sành điệu với Burger gà sốt Katsu</a></div>
+						<div class="box---text">Burger là một trong những món thức ăn nhanh được g...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1233" class="box--image"><img src="/img/campaign/5e4f614235c05_2796e2f6dcc7f58d3b41eb9243e6b988.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1233">No lâu chắc bụng với cơm chiên trứng thơm ngon</a></div>
+						<div class="box---text">Cơm chiên hẳn là thực đơn ưa thích của rất nhiều b...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1245" class="box--image"><img src="/img/campaign/5e688485320a2_8bce5eabc3297e7b15d061d84e3fe6b9.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1245">Bấn loạn với Temaki Sushi cá ngừ sốt mè rang</a></div>
+						<div class="box---text">Tín đồ của ẩm thực Nhật sẽ không khỏi mê mẩn với m...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1246" class="box--image"><img src="/img/campaign/5e6993754912e_2043d80bc8ae6ade32f641d7d94f46b8.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1246">Thực đơn healthy với salad gà nướng & sốt tương ớt mayo</a></div>
+						<div class="box---text">Vitamin và chất xơ từ rau củ không chỉ được các th...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1247" class="box--image"><img src="/img/campaign/5e688896442ac_4b7aedb3ed5f518090b8448dc0df6b39.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1247">Sandwich gà nướng & phô mai béo ngậy dinh dưỡng</a></div>
+						<div class="box---text">"Bánh mì Tây" - Sandwich luôn là sự lựa chọn hoàn ...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1256" class="box--image"><img src="/img/campaign/5e7b264a7381f_639aff6199c9dee705fd8972db5d8f7c.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1256">Thực đơn kiểu Hàn với cơm thịt heo xào & kim chi</a></div>
+						<div class="box---text">Bữa cơm nóng hổi đổi mới bằng món ăn lai Hàn, thịt...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1257" class="box--image"><img src="/img/campaign/5e7b27884e19b_271741e58c12d6ed0bf6506134d32500.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1257">Temaki Onigiri thịt heo sốt bulgogi cay ngon không thể cưỡng</a></div>
+						<div class="box---text">Đột phá mới trong làng cơm nắm chính là món Temaki...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1258" class="box--image"><img src="/img/campaign/5e7b29cd1289c_d7803c9e19c77e0fc870857ea38ba4be.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1258">Bữa sáng healthy với sandwich hỗn hợp cá ngừ rau củ</a></div>
+						<div class="box---text">Sandwich ngũ cốc - đột phá mới trong làng sandwich...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1259" class="box--image"><img src="/img/campaign/5e7b2acce0a98_6365e1b77fe8fd9a8e1e977debc702f3.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1259">Bổ sung vitamin và chất xơ cho cơ thể với salas bắp cải trộn & thanh cua</a></div>
+						<div class="box---text">Work from home khiến bạn có nhiều thời gian để "tă...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1265" class="box--image"><img src="/img/campaign/5e8d46bf5b160_925e9e757ac50962fb4a7c7a9ab9d761.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1265">Đứng hình với Sandwich ngũ cốc Gà xé sốt Mè rang mới lạ</a></div>
+						<div class="box---text">Cực phẩm cho bữa sáng đây rồi cả nhà ơi!
+Sandwich...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1269" class="box--image"><img src="/img/campaign/5e8d506abbea4_623da7b8f1cde04c6fcdb331110fb6dd.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1269">Bấn loạn với Temaki Onigiri Xúc Xích Mayo mới lạ</a></div>
+						<div class="box---text">Vẫn là nắm cơm mềm dèo với rong biển dai giòn nhưn...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1270" class="box--image"><img src="/img/campaign/5e8d51beb6bc4_32a18f41e26a4175d107a8beae79cbf0.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1270">Mì gà sốt phô mai cay cay mới lạ</a></div>
+						<div class="box---text">Sợi mì dai giòn đúng tiêu chuẩn hòa quyện trong nh...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1272" class="box--image"><img src="/img/campaign/5e96b3e3ee897_7cf000b2530427ae5193207893b3796b.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1272">Cơm gà sốt cà chua vị đậm đà, ngon như cơm nhà</a></div>
+						<div class="box---text">Hạt cơm mềm dẻo thơm lừng hương lúa gạo, thịt gà "...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1273" class="box--image"><img src="/img/campaign/5e96b5badf1e4_d299323ed0546b17e6efe8179edf1dd8.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1273">Bổ sung vào menu ăn vặt món mực tẩm tiêu cay dai ngon giòn rụm</a></div>
+						<div class="box---text">Mê típ mắt với xiên mực tẩm tiêu cay của MINISTOP....</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1274" class="box--image"><img src="/img/campaign/5e9fbf0f9fedb_4a390ffd277a85b0293524bfc824e707.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1274">Mousse thanh long màu hấp dẫn vị ấn tượng</a></div>
+						<div class="box---text">Món bánh kem xốp, mềm, mát lạnh tan ngay trong miệ...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1276" class="box--image"><img src="/img/campaign/5e9fc16799e6f_a8016096f14203123eb6be718f09ade6.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1276">Sandwich gà nướng cay - hương hấp dẫn vị ngất ngây!</a></div>
+						<div class="box---text">Sự lựa chọn hoàn hảo cho một bữa sáng nhẹ nhàng, n...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1282" class="box--image"><img src="/img/campaign/5eb2367569e86_f0db945ea0daf568f53e4010c4b857ee.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1282">Onigiri thanh cua & trứng ngon nức lòng</a></div>
+						<div class="box---text">Nắm cơm mềm dẻo, thơm lừng mùi gạo mới ăn kèm than...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1283" class="box--image"><img src="/img/campaign/5eb23895e0307_38ce8093ac501f5fbbf3d2b0ce179277.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1283">Chìm đắm trong sự ngọt ngào và mềm mại của bánh Socola kem phô mai</a></div>
+						<div class="box---text">Những chiếc bánh ngọt ngào, mềm mại, béo ngậy bởi ...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1284" class="box--image"><img src="/img/campaign/5eb23972dfe95_0a348d6ae434a26e8f850e1487a37a32.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1284">Onigiri cá chình & trứng cá độc đáo</a></div>
+						<div class="box---text">Nắm cơm mềm dẻo, thơm lừng mùi gạo mới hòa quyện t...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1288" class="box--image"><img src="/img/campaign/5ebbb1a6adef5_ad5760a3aaf6337753770bd3a6e66dc0.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1288">No căng chắc bụng với cơm bò xào đậu que Pháp</a></div>
+						<div class="box---text">Hạt cơm mềm dẻo, thơm lừng ăn kèm với bò xào đậu q...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1289" class="box--image"><img src="/img/campaign/5ebbb1ead4e7e_0ca457f15b3ab316f11766c4a1a1f4c1.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1289">Bổ sung vào menu món Sandwich xúc xích & chà bông</a></div>
+						<div class="box---text">Sự kết hợp mới lạ giữa xúc xích dai giòn sần sật v...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1297" class="box--image"><img src="/img/campaign/5ecdc0cb1a79b_9b87e185ad0d25e634af362a5b519428.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1297">Bấn loạn với bánh sầu riêng thơm lừng nức mũi</a></div>
+						<div class="box---text">Món bánh sầu riêng thơm lừng, vỏ bánh mềm mịn bao ...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1299" class="box--image"><img src="/img/campaign/5ed6ff299f5f8_6f816b374a159ba2afe7ab22d5cacaa9.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1299">Bấn loạn với Temaki Onigiri thịt heo sốt nước tương vị ấn tượng</a></div>
+						<div class="box---text">Rong biển dai giòn bao bọc nắm cơm mềm dẻo thơm lừ...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1304" class="box--image"><img src="/img/campaign/5ee0ab3c625bc_562f783d964eec99803f019c4c62e4c2.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1304">Temaki Sushi gà nướng vị mê li, ngon hết ý</a></div>
+						<div class="box---text">Cuộn cơm mềm dẻo, chắc nịch "ôm" lấy thịt gà nướng...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1310" class="box--image"><img src="/img/campaign/5ef2be891aab7_c8949837bee0466f05fab8e2bded3673.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1310">No căng chắc bụng với Cơm chiên xúc xích & kim chi mới lạ</a></div>
+						<div class="box---text">Xúc xích giòn sần sật hòa quyện với kim chi chua c...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1311" class="box--image"><img src="/img/campaign/5ef2bed9d1968_dc60532e2ff2f01cbe14cfbee05d62d7.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1311">Temaki Sushi gà sốt phô mai beo béo đậm đà</a></div>
+						<div class="box---text">Nắm cơm mềm dẻo bao bọc lấy nhân thịt gà sốt phô m...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1317" class="box--image"><img src="/img/campaign/5f0534ef634a5_f25551126678b72d89919e17a0a19a6f.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1317">Sandwich nướng trứng và phô mai thơm ngon khó cưỡng</a></div>
+						<div class="box---text">Miếng "bánh mì" tây được nướng vừa tới thơm lừng, ...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1318" class="box--image"><img src="/img/campaign/5f05379412a54_306f7d439a2bc9bf2ef33e81151c69aa.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1318">Bổ sung vào menu Oden item Chả cá rong biển cuộn trứng</a></div>
+						<div class="box---text">Nồi lẩu Oden nóng hổi nức tiếng gần xa với nước lẩ...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1320" class="box--image"><img src="/img/campaign/5f054528b6721_251d46d617d45e646b259310a952b441.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1320">Onigiri trứng phô mai - ăn là mê ngay!</a></div>
+						<div class="box---text">Nắm cơm tròn trịa và chắc nịch, hạt cơm dẻo mềm th...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1325" class="box--image"><img src="/img/campaign/5f0e81f00d9aa_922f5786e274b6c5c023163f6508fa81.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1325">Cơm thịt nướng & gà BBQ vị đậm đà như cơm nhà</a></div>
+						<div class="box---text">Hạt cơm mềm dẻo thơm lừng hương gạo mới ăn kèm với...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1328" class="box--image"><img src="/img/campaign/5f18f886969b8_0cf8ec23cb168ad97babb7055b188989.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1328">Mê mệt món tôm viên tẩm cốm mới lạ</a></div>
+						<div class="box---text">Tôm viên tươi ngon được nêm nếm vừa miệng được bao...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1330" class="box--image"><img src="/img/campaign/5f2a5ae157e31_28396034d995585b9eb9674c36cbdbee.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1330">Kem tươi đậu đỏ giúp "sáng tỏ" tình duyên</a></div>
+						<div class="box---text">'Cây kem thần thánh “hạ cánh” đúng mùa thất tịch
+...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1341" class="box--image"><img src="/img/campaign/5f4617b4b09bb_db80854e8ec7c53acce80443822241b8.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1341">Làm nóng bao tử với bộ đôi Bánh bao bí đỏ đậu xanh & Bánh bao đậu đỏ nước cốt dừa</a></div>
+						<div class="box---text">Ra mắt bộ đôi Bánh bao bí đỏ đậu xanh & Bánh bao đ...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1343" class="box--image"><img src="/img/campaign/5f4e214883f27_240095085dbb4aab7f03fb6c86be93b0.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1343">Bổ sung vào thực đơn sáng bộ đôi Sandwich mới dinh dưỡng</a></div>
+						<div class="box---text">Bữa sáng gọn nhẹ mà vẫn đầy đủ chất sao có thể bỏ ...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1346" class="box--image"><img src="/img/campaign/5f4e2a4dc3fa9_15cfceed36c48d8648cbe62bdccb9bbb.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1346">Cay cay nồng nồng với thịt heo xào sả ớt thơm ngon</a></div>
+						<div class="box---text">Hương sả thơm lừng thấm đậm trong từng xớ thịt, ch...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1353" class="box--image"><img src="/img/campaign/5f58a3191e62a_cd969499d28a1866b48142a17e7fb1f3.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1353">Bộ đôi cơm nắm mới trình làng</a></div>
+						<div class="box---text">Onigiri luôn là sự lựa chọn hoàn hảo cho những bữa...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1354" class="box--image"><img src="/img/campaign/5f58a4c15aa66_18ea30fa449722cb8d799c2d9855a8ab.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1354">Mê mệt với Temaki Onigiri Gà Nướng mới</a></div>
+						<div class="box---text">Nắm cơm chắc nịch, mềm dẻo được bao bọc bởi rong b...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1357" class="box--image"><img src="/img/campaign/5f632a1a0cc55_ec4092f4db23edff413336e616b46524.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1357">Toàn bộ menu Cơm hộp & Mì hộp giảm 3000đ</a></div>
+						<div class="box---text">Ăn ngon mỗi giờ, đổi món mỗi ngày với ưu đãi giảm ...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1358" class="box--image"><img src="/img/campaign/5f632cb4aebc2_7bffe11a0701dc5fbcf90adabd3b1540.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1358">Sandwich nướng xúc xích & cá ngừ phô mai MỚI</a></div>
+						<div class="box---text">Xúc xích dai giòn cùng cá ngừ dinh dưỡng quyện đều...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1359" class="box--image"><img src="/img/campaign/5f632e6363d5d_bcc47b8ced5a335f37e6c1f1a42792d2.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1359">Đánh thức vị giác với Mì tôm thịt sốt phô mai</a></div>
+						<div class="box---text">Sợi mì dai dài siêu đã, thịt bằm được nêm nếm chuẩ...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1364" class="box--image"><img src="/img/campaign/5f6ac1dd9c6e6_44a04d0c67161db45af140cbe61d6cda.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1364">Ăn vặt quá đã với Gà không xương tẩm bột chiên</a></div>
+						<div class="box---text">Thịt gà dinh dưỡng được tẩm ướp gia vị vừa miệng, ...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1365" class="box--image"><img src="/img/campaign/5f6af72eeff2b_14c0878439e746df91e9b5e7475e3e3f.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1365">Ăn uống healthy với Salad cải tiến mới</a></div>
+						<div class="box---text">Rau củ tươi ngon, thịt cá dinh dưỡng, tất cả hòa q...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1368" class="box--image"><img src="/img/campaign/5f759b1dcca40_1a09af7396fb30558045eaac8df4b9e7.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1368">Ngày mưa nhâm nhi chút đồ uống cùng Bò cuốn lá lốt mới lạ</a></div>
+						<div class="box---text">Hương vị thơm ngon đặc trưng, hấp dẫn của thịt bò ...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1369" class="box--image"><img src="/img/campaign/5f759d1528c08_2e87589cbbe4873dfebce139d3376ec8.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1369">Bánh Rollini Nhân Táo - tên độc đáo & vị mới lạ</a></div>
+						<div class="box---text">Chiếc bánh với hương vị thơm ngon, hấp dẫn được nh...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1374" class="box--image"><img src="/img/campaign/5f854dccdf932_c4d3557b435f35f06d7386076338d5fb.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1374">NGÀY MÁT LẠNH VỚI KEM TƯƠI SỮA CHUA CAM</a></div>
+						<div class="box---text">Bổ sung ngay năng lượng mát lạnh cho ngày bừng tỉn...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1376" class="box--image"><img src="/img/campaign/5f8668e48abea_71923b9b9c9ee81f9523426911d359e9.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1376">Thử ngay món Mì Tương Đen mang âm hưởng Hàn Quốc</a></div>
+						<div class="box---text">Mì tương đen Hàn Quốc (hay còn được gọi là Jajangm...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1377" class="box--image"><img src="/img/campaign/5f86d0a048a5f_3549290b88946c7499996fdbd2c1a16d.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1377">Say mê vị Trà sữa trà đen độc đáo</a></div>
+						<div class="box---text">Đậm vị trà, thơm vị sữa, béo ngậy đầy mê hoặc là n...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1380" class="box--image"><img src="/img/campaign/5f8fafa4082a8_1f7c2dc5b09d5d371a079d4240a28cb3.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1380">Trà sữa than tre độc đáo ấn tượng</a></div>
+						<div class="box---text">Các tín đồ trà sữa đang “truy lùng” một món đồ uốn...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1382" class="box--image"><img src="/img/campaign/5f8fbdb0b0e87_5c73ec94eb81c070a22af5b62e94fdc1.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1382">Xôi gà nấm đông cô dẻo thơm nóng nổi</a></div>
+						<div class="box---text">Bữa sáng với món xôi dẻo thơm kết đôi cùng màu vàn...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1386" class="box--image"><img src="/img/campaign/5f9b89d8b10cf_b456621bdcb2a88a8239ea5c094b7dd3.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1386">BURGER BÓNG ĐÊM - NHÌN LÀ MUỐN NẾM!</a></div>
+						<div class="box---text">Chiếc burger đen độc đáo hứa hẹn sẽ khuynh đảo mùa...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1392" class="box--image"><img src="/img/campaign/5fb3433e55bd9_d3d2f6eae2bd564126c41d1ea59dd458.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1392">HỘI THẢO NHƯỢNG QUYỀN MINISTOP</a></div>
+						<div class="box---text">5 lí do các nhà kinh doanh và đầu tư lựa chọn nhượ...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1393" class="box--image"><img src="/img/campaign/5fb3449d7b509_688f44341b0ee71d148f289621901acc.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1393">SINH NHẬT MINISTOP LẦN THỨ 9: MUA LÀ CÓ QUÀ!</a></div>
+						<div class="box---text">I. THỜI GIAN
+Từ 18/11 đến 08/12/2020
+
+II. PHẠM ...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1394" class="box--image"><img src="/img/campaign/5fb47d1dc248f_dbe1f67d03bd73806e9f3d899a7b561f.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1394">ĐẠI TIỆC KARIMAN GIẢM 3000Đ</a></div>
+						<div class="box---text">Kariman - món bánh độc quyền của MINISTOP, mang đầ...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1395" class="box--image"><img src="/img/campaign/5fb47e23a5837_7ad264ccb1a5d97865153a59c062745c.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1395">TẶNG NGAY MIRINDA ĐÁ ME KHI MUA CƠM HỘP BẤT KỲ</a></div>
+						<div class="box---text">Cơm hộp MINISTOP đa dạng đủ món, tươi ngon nóng hổ...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1396" class="box--image"><img src="/img/campaign/5fb4e12e446ab_3b121f3b1bdcc1db960f41bd45fe2737.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1396">GIẢM ĐẾN 5000Đ CÀ PHÊ BẤT KỲ</a></div>
+						<div class="box---text">Ngày tỉnh táo đầy năng lượng với ưu đãi cà phê giả...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1397" class="box--image"><img src="/img/campaign/5fb6367d6c925_aa96d88d4a8dfc6dde251902e5537028.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1397">BÁNH GIÒ NHÂN GÀ - PHIÊN BẢN MỚI LẠ!</a></div>
+						<div class="box---text">'Bánh giò vốn là món ăn bất hủ trong ẩm thực Việt ...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1398" class="box--image"><img src="/img/campaign/5fb63ac6b883d_69d3b61fa8325287a27499b9bf5a9d56.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1398">BỘ ĐÔI BÁNH MÌ KẸP DINH DƯỠNG TRÌNH LÀNG</a></div>
+						<div class="box---text">Bữa sáng Sài Thành sao có thể thiếu bánh mì đậm ch...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1399" class="box--image"><img src="/img/campaign/5fb6417f24924_ede55b0ad52bc7ffeb8a13634ecff73d.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1399">SET MINI SUSHI XINH XẮN ĐẦY THU HÚT</a></div>
+						<div class="box---text">Fan của sushi chắc hẳn sẽ mê tít mắt những cuộn su...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1401" class="box--image"><img src="/img/campaign/5fbce0e227d31_c5b741c9bbe5f4a05f1957b43aab5b9a.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1401">GIẢM 3000Đ COMBO ODEN NÓNG HỔI - VỪA THỔI VỪA ĂN!</a></div>
+						<div class="box---text">Những xiên Oden đủ vị tắm trong nước lẩu chua ngọt...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1402" class="box--image"><img src="/img/campaign/5fbce17349d09_72921c8aa383b5f97a7475ba4668bddf.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1402">TOÀN BỘ MENU MÌ HỘP GIẢM 3000Đ - THỎA SỨC CHỌN LỰA!</a></div>
+						<div class="box---text">Mỗi ngày một món với mì hộp MINISTOP dai ngon đủ v...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1403" class="box--image"><img src="/img/campaign/5fbf71ed17ae6_da33c87ff009da5e432e41f9e8a1d800.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1403">URAMAKI SUSHI ĐÃ TRỞ LẠI VÀ LỢI HẠI HƠN XƯA</a></div>
+						<div class="box---text">Những "viên" sushi nhỏ nhắn xinh xắn đầy cuốn hút....</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1404" class="box--image"><img src="/img/campaign/5fbf774c9e11d_d8bb2c080acf6216d4c2e2bda74dd2ff.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1404">MINISTOP NHẬN ĐẶT BÁNH KEM GIÁNG SINH</a></div>
+						<div class="box---text">Mùa Giáng Sinh lại về rồi cả nhà ơi!
+Thời tiết bắ...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1405" class="box--image"><img src="/img/campaign/5fc77a1373ded_50c47b2c271fe9fd3302f349eca0d95f.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1405">MỰC TẨM TIÊU CAY GIẢM CÒN 15K</a></div>
+						<div class="box---text">Thưởng thức cái giòn rụm của lớp bột chiên mằn mặn...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1406" class="box--image"><img src="/img/campaign/5fc77b0d7d7cc_c10336cbd64490e8070d044834aff017.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1406">GIẢM 10K KHI MUA SUSHI BẤT KỲ CÙNG OLONG VỊ CHANH</a></div>
+						<div class="box---text">Những set sushi bắt mắt đầy ấn tượng, hạt cơm dẻo ...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1407" class="box--image"><img src="/img/campaign/5fc89cc14352a_ec6b803ea6ebca96ebba8549fb1c5fef.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1407">BÁNH BÔNG LAN PHÔ MAI THƠM LỪNG BÉO NGẬY</a></div>
+						<div class="box---text">Bánh bông lan phô mai là món bánh nổi lên trong và...</div>
+					</div>
+				</li>
+								<li class="box heightLine-group1"> <a href="/campaigns/detail?id=1408" class="box--image"><img src="/img/campaign/5fc89e0c9b9b5_78568eb55a3182593d4f40f97bbbeb78.jpg" alt="cover" height="160px"/></a>
+					<div class="box--item">
+						<div class="box---title"><a href="/campaigns/detail?id=1408">CALIFORNIA SUSHI NHỎ NHẮN XINH XẮN</a></div>
+						<div class="box---text">Món cơm cuộn nhỏ nhắn vừa miệng, hạt cơm dẻo thơm ...</div>
+					</div>
+				</li>
+				
+		</ul>				</div>
+				<!--/main-->
+				<!--start sidebar-->
+				<div id="left_side">
+					<h1 id="logo"><a href="/"><img src="/frontend/img/common/logo.jpg" alt="MINI STOP" /></a></h1>
+					<div id="side_smile_watch">
+						<a href="https://watch.ministop-campaign.vn" >
+							<iframe width="100%" height="219" src="https://watch.ministop-campaign.vn/index.php?c=mini" frameborder="0"></iframe>
+						</a>
+					</div>
+					<div id="lis_shop">
+						<p><a href="/ms">Danh sách cửa hàng</a></p>
+					</div>
+					<ul class="side_navi">
+						<li><a href="/products">Thông tin sản phẩm</a>
+							<ul>
+								<li><a href="/new-product">Sản phẩm mới</a></li>
+								<li><a href="/best-seller">Sản phẩm bán chạy</a></li>
+								<li><a href="/all-product">Tất cả sản phẩm</a></li>
+							</ul>
+						</li>
+						<li><a href="/campaign">Khuyến mãi và sự kiện</a></li>
+						<li><a href="/service">Dịch vụ tại cửa hàng</a></li>
+						<li><a href="/ministopfan">MINISTOP FAN</a></li>
+						<li><a class="tuyendung" href="/recruit">Tuyển dụng</a></li>
+					</ul>
+					<div id="side_subject">
+						<p id="subject_img"><img src="/frontend/img/common/side_subject_img.png" alt="Chủ đề" /></p>
+						<dl>
+														<dt>09-12-2020<span class="bg02">Sự kiện</span></dt>
+							<dd><a href="/campaigns/detail?id=1412">BỘ ĐÔI BÁNH MÌ QUE MỚI TRÌNH LÀNG THÁNG 12</a></dd>
+														<dt>09-12-2020<span class="bg02">Sự kiện</span></dt>
+							<dd><a href="/campaigns/detail?id=1411">ĐẠI TIỆC ONIGIRI - TẤT CẢ ĐỒNG GIẢM 3K</a></dd>
+											</dl>
+				<p id="view_more"><a href="/topics">Xem tất cả</a></p>
+			</div>
+			<div class="fb-container">
+				<div class="fb-page" data-href="https://www.facebook.com/pages/MINISTOP-Vietnam/268920093230831?fref=ts" data-tabs="timeline" data-height="350" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/pages/MINISTOP-Vietnam/268920093230831?fref=ts"><a href="https://www.facebook.com/pages/MINISTOP-Vietnam/268920093230831?fref=ts">MINISTOP Vietnam</a></blockquote></div></div>
+			</div>
+		</div><!--end sidebar-->
+		<!--/sidebar-->
+	</div>
+	<!--/content_inner-->
+</div>
+<!--/contents-->
+<!--start footer-->
+<div id="footer">
+	<div id="footer_inner" class="clearfix">
+		<ul id="foot_link" class="clearfix">
+			<li><a href="/termofuse">Điều khoản sử dụng</a></li>
+			<li><a href="/privacy">Chính sách bảo mật</a></li>
+		</ul>
+				<p id="copyright">
+			<a href="http://online.gov.vn/HomePage/CustomWebsiteDisplay.aspx?DocId=38731" target="_blank">
+				<img width="200px" src="/frontend/img/common/ministry-of-industry-logo.png" />
+			</a><br/>
+			CÔNG TY TNHH MINISTOP VIỆT NAM<br />
+			Giấy CNĐKDN: 0313096162 – Ngày cấp: 15/01/2015, được sửa đổi lần thứ 12 ngày 19/07/2019.<br />
+			Cơ quan cấp: Phòng Đăng ký kinh doanh – Sở kế hoạch và Đầu tư TP Hồ Chí Minh<br />
+			Địa chỉ đăng ký kinh doanh: 215 Điện Biên Phủ, Phường 15, Quận Bình Thạnh, Thành phố Hồ Chí Minh, Việt Nam.<br />
+			Điện thoại: (028) 3510 6870<br />
+			Email: &#105;nfo&#64;m&#105;&#110;is&#116;&#111;&#112;.&#118;n<br />
+			Copyright &copy; MINISTOP VIETNAM. All rights reserved</p>
+			</div>
+</div>
+<!--end footer-->
+<!--/footer-->
+</div>
+<!-- /wrapper -->
+
+<!-- <script type="text/javascript" src="./public/frontend/common/js/common.js"></script>  -->
+<script type="text/javascript" src="/frontend/common/js/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="/frontend/common/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="/frontend/common/js/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="/frontend/common/js/jquery.slidescroll.js"></script>
+<script type="text/javascript" src="/frontend/common/js/jquery.fancybox-1.3.4.js"></script>
+<script type="text/javascript" src="/frontend/common/js/init.js"></script>
+<script type="text/javascript" src="/frontend/common/js/heightLine.js"></script>
+<script type="text/javascript" >
+	function dmyToDate(s) {
+		var b = s.split(/\D+/);
+		return new Date(b[2], --b[1], b[0]);
+	}
+
+	function dateCheck(from,to,check) {
+		var from = dmyToDate(from);
+		var to = dmyToDate(to);
+		var check = dmyToDate(check);
+		if (check >= from && check <= to) {
+			return true;
+		}
+		return false;
+	}
+
+	function getCurrentDate(){
+		var today = new Date();
+		var dd = today.getDate();
+	var mm = today.getMonth()+1; //January is 0!
+	var yyyy = today.getFullYear();
+	if(dd<10) {
+		dd='0'+dd;
+	}
+	if(mm<10) {
+		mm='0'+mm;
+	}
+	return dd+'-'+mm+'-'+yyyy;
+}
+$(function() {
+	// Mimip slider and balloon slide
+	var obj = $('.bxslider').bxSlider({
+		auto: true,
+		speed: 500,
+		autoControls: false,
+		infiniteLoop: true,
+		pause: 7000,
+		maxSlides: 1,
+		onSlideBefore: function() {
+			$('.mimip-talk ul li.speak').fadeOut(300);
+		},
+		onSlideAfter: function() {
+			$('.mimip-talk ul li.speak').removeClass('speak');
+			var currentSlide = obj.getCurrentSlide();
+			$('.mimip-talk ul li').eq(currentSlide).addClass('speak');
+			$('.mimip-talk ul li.speak').fadeIn(300);
+			obj.startAuto();
+		}
+	});
+
+		jQuery.ajax({
+		url: "/get-date-of-event",
+		type: "post",
+		dataType: "json",
+		success: function(result){
+			var curDate = getCurrentDate();
+			if(dateCheck(result['date'][0], result['date'][1], curDate)){
+				var img = '/img/campaign/' + result['data'].popupimg;
+				$.fancybox({
+					'padding'		: 0,
+					'href'			: img,
+					'transitionIn'	: 'elastic',
+					'transitionOut'	: 'elastic'
+				});
+			}
+		}
+	});
+});
+
+
+
+
+
+</script>
+
+
+</body>
+</html>
